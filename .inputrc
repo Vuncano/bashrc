@@ -1,0 +1,16 @@
+# history search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# completion settings
+#ignores uper an lower case, thus hitting "tab" will complete the command or
+#directory name ignoring case sensitivity
+set completion-ignore-case on
+
+# keybinds
+#alt+s adds "sudo" to the beginig of the line
+"\es":"\C-asudo \C-e"
+#alt+p writes "sudo pacman -"
+"\ep":"sudo pacman -"
+#alt+y writes "yay -"
+"\ey":"yay -"
