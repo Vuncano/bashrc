@@ -1,5 +1,3 @@
-# (ble.sh) Add this lines at the top of .bashrc:
-	[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
 
 
 
@@ -20,7 +18,7 @@ export PS1="[\u@\e[0;34mVuncano\e[m \W]\$"
 #pretty stuff
 
  # neofetch --disable packages 
-neofetch --ascii_distro arch_small --distro_shorthand on --gpu_type dedicated --disable theme icons resolution model term title underline packages kernel --color_blocks off --os_arch off
+# neofetch --ascii_distro arch_small --distro_shorthand on --gpu_type dedicated --disable theme icons resolution model term title underline packages kernel --color_blocks off --os_arch off
 
 
 #apertureorange theme
@@ -87,8 +85,8 @@ networktest(){
     then
       echo "Ping to 8.8.8.8 works, possible DNS failure"
     else
-      echo "Ping to 8.8.8.8 also failed, issue log at nwfail.log"
-      ip addr >> nwfail.log
+      echo "Ping to 8.8.8.8 also failed, issue log at $HOME/.log/nwfail.log"
+      mkdir -p $HOME/.log ; ip addr > $HOME/.log/nwfail.log
     fi
   fi
 }
@@ -98,7 +96,7 @@ networktest(){
 # Default programs
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave"
+export BROWSER="qutebrowser"
 export READER="zathura"
 export FILE="pcmanfm"
 
@@ -108,9 +106,4 @@ HISTSIZE=20000
 HISTFILESIZE=20000
 
 
-
-
-# (ble.sh) Add this line at the end of .bashrc:
-[[ ${BLE_VERSION-} ]] && ble-attach
-source ~/.local/share/blesh/ble.sh
 source ~/.local/share/blesh/ble.sh
