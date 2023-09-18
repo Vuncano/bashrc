@@ -1,6 +1,3 @@
-
-
-
 # documentation on ble.sh https://github.com/akinomyoga/ble.sh
 
 #
@@ -17,12 +14,9 @@ export PS1="[\u@\e[0;34mVuncano\e[m \W]\$"
 
 #pretty stuff
 
- # neofetch --disable packages 
+# neofetch --disable packages 
 # neofetch --ascii_distro arch_small --distro_shorthand on --gpu_type dedicated --disable theme icons resolution model term title underline packages kernel --color_blocks off --os_arch off
 
-
-#apertureorange theme
-#(cat ~/.config/wpg/sequences &)
 
 # Define a few Color's
 BLACK='\e[0;30m'
@@ -58,7 +52,9 @@ alias snv="sudo nvim"
 alias snvd="sudo nvim ."
 alias nvf="fd --type f --hidden --exclude .git | sk-tmux --reverse --height 25% --preview='head -$LINES {}' | xargs -r nvim"
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
+alias mkdir="mkdir -v"
+alias rm="rm --verbose"
 
 
 
