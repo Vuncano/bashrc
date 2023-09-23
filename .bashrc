@@ -55,7 +55,7 @@ alias nvf="fd --type f --hidden --exclude .git | sk-tmux --reverse --height 25% 
 alias ls='ls --color=auto --group-directories-first'
 alias mkdir="mkdir -v"
 alias rm="rm --verbose"
-
+alias cp="cp -v"
 
 
 #japanese stuff
