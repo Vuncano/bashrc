@@ -7,6 +7,7 @@
 # If not running interactively, don't do anything
 
 set -o vi
+bind 'set completion-ignore-case on'
 
 #changes what terminal shows b4 the cousor
 export PS1="[\u@\e[0;34mVuncano\e[m \W]\$"
