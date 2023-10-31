@@ -1,3 +1,3 @@
 #!/bin/sh
 
-prime-run java -jar $HOME/Games/TLauncher/TLauncher-2.885.jar
+prime-run java -jar $HOME/Games/tlauncher/TLauncher-2.885.jar
