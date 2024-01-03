@@ -11,7 +11,7 @@ do
 
 
   if [ "$ischarching" == "discharging" ] && [ $notf -eq 0 ]; then
-    [ "$checkbat" -le 90 ] && zenity --warning --text="low battery level: $(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}' | tr -d '\n')" && notf=1
+    [ "$checkbat" -le 15 ] && zenity --warning --text="low battery level: $(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}' | tr -d '\n')" && notf=1
   fi
 
   if [ "$ischarching" == "charging" ]; then
