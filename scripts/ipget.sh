@@ -24,5 +24,10 @@ if [ "$parameter" == "" ]; then
   exit 0
 fi
 
-echo -e "Error: Invalid argument\nUsage:    ipget { lan | gateway | }"
+if [ "$parameter" == "help" ]; then
+  echo -e "ipget is a script to get ip info quickly\n \nUsage: ipget [ PARAMETER ]\n       where PARAMETER:={ help | lan | gateway | }"
+  exit 0
+fi
+
+echo -e "Error: Invalid parameter\ntry: ipget help"
 exit 1
