@@ -2,3 +2,4 @@ $xrandr --output "HDMI-1" --mode 1920x1080
 
 $xrandr --output "eDP-1" --auto --output "HDMI-1" [ --same-as | --left-of | --right-of | --above | --below ] "eDP-1"
 
+TODO: make a proper shell script:
