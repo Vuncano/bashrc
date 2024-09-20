@@ -10,7 +10,7 @@ set -o vi
 bind 'set completion-ignore-case on'
 
 #changes what terminal shows b4 the cousor
-export PS1="[\u@\e[0;34mVuncano\e[m \W]\$"
+export PS1="[\u@\e[0;34march\e[m \W]\$"
 
 
 #pretty stuff
@@ -57,6 +57,7 @@ alias ls='ls --color=auto --group-directories-first'
 alias mkdir="mkdir -v"
 alias rm="rm --verbose"
 alias cp="cp -v"
+alias primesteam="prime-run steam"
 
 
 #japanese stuff
@@ -68,10 +69,10 @@ export XMODIFIERS='@im=fcitx'
 
 # functions
 
-# xkeys(){
-#   xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
-# }
-#
+xkeys(){
+  xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+}
+
 
 # Default programs
 export EDITOR="nvim"
